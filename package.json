@@ -1,0 +1,33 @@
+{
+  "name": "@deandevlnpm/vue-lib",
+  "version": "0.0.2",
+  "description": "A collection of Vue3 single page components with easy access to styling and events support.",
+  "repository": "https://github.com/deandevl/deandevlnpm-vue-lib",
+  "author": "Rick Dean <deanr3@bardstown.com>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/vue-lib.umd.js",
+  "module": "./dist/vue-lib.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-lib.mjs",
+      "require": "./dist/vue-lib.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "login": "npm login",
+    "publish_library": "npm publish --access public"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.11",
+    "less": "^4.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.8"
+  }
+}
