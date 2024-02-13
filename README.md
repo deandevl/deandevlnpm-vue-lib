@@ -32,30 +32,29 @@
 
 ## Demonstrations
 
-Demonstrations for each of the components that make up **@deandevlnpm/vue-lib** are available from the distributed `src` folder.  We'll take an example using  **WorkSheetComp**. The steps are based on the  [npm][https://www.npmjs.com/] and [vite][https://vitejs.dev/] development environment.
+Demonstrations for each of the components that make up **@deandevlnpm/vue-lib** are available from the distributed `demos` folder available at  the [git repository][https://github.com/deandevl/deandevlnpm-vue-lib]. The steps are based on [npm][https://www.npmjs.com/] and the package wrapper [vite][https://vitejs.dev/] development environment. Also available from the repository is a more detailed description of each component in the `ReadMe` folder.
 
-1. With npm installed on your computer, from a Command Prompt, create the scaffolding for a vite project in the folder *worksheetcomp_demo*. When prompted, select 'Vue' for the template and 'Javascript'.  Enter the following: 
+1. With npm installed on your computer, download the repository and change directories to  `demos` and from a Command Prompt, Enter the following: 
 
    ```
-   npm init vite@latest worksheetcomp_demo
    npm install
    ```
 
-2. Install the  **@deandevlnpm/vue-lib**  library along with support for [less][https://lesscss.org/ ] and [vue-router][https://router.vuejs.org/]. Enter the following:
-
-   ```
-   npm install @deandevlnpm/vue-lib
-   npm install less
-   npm install vue-router
-   ```
-
-3. Copy the `/src/WorkSheetComp/App.vue` and `/dist/style.css` files in the **@deandevlnpm/vue-lib** distribution and paste/replace the `App.vue` and `style.css` files in the `src` folder of the project.  You can delete the `assets` and `components` folders in `src` and the `public` folder at the root of the project.
-
-4. Start the vite development server and browse to *localhost:5173*:
+2. Start the [vite][https://vitejs.dev/]  server. Run the following npm script:
 
    ```
    npm run dev
    ```
 
-5. The worksheet should appear on the browser with cells filled with a set of random numbers/strings. By repeating step 3 for just the `App.vue` transfer you can view the demos for the other components.
+3.  Bring up the main html page of the demos. From any browser enter the following address:
+
+   ```
+   localhost:5173
+   ```
+
+4. Select any of the links on the main page to demonstrate a specific component.  Many of the demos emit event data so you might want to run the demos in the browser's development mode to view the console output from the events.
+
+   
+
+   
 
